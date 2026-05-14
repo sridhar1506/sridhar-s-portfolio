@@ -303,6 +303,10 @@ header ul li a.active {
 
 #about-me h3 span {
     color: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 10px 0px;
+    max-width: 800px;
 }
 
 #about-me h1 {
@@ -310,7 +314,17 @@ header ul li a.active {
     font-size: 2.5rem;
     font-weight: 500;
     margin: 10px 0px;
-    max-width: 700px;
+    max-width: 800px;
+}
+
+#about-me p {
+    color: var(--text-color);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-top: 15px;
+    max-width: 800px;
+    text-align: justify;
+    opacity: 0.9;
 }
 
 /* Skills*/
@@ -467,6 +481,9 @@ header ul li a.active {
     color: var(--text-color);
     margin-top: 10px;
     font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: justify;
+    opacity: 0.9;
 }
 
 /* Projects */
@@ -501,23 +518,29 @@ header ul li a.active {
     color: var(--text-color);
     margin-top: 10px;
     font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+    opacity: 0.9;
 }
 
 .project-full-box ul {
     color: var(--text-color);
     margin-top: 15px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding-left: 20px;
     list-style-type: disc;
 }
 
 .project-full-box ul li {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    text-align: justify;
+    opacity: 0.9;
 }
 
 .project-full-box ul li strong {
     font-size: 0.95rem;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 /* Contact */
@@ -686,6 +709,10 @@ header ul li a.active {
     #about-me h1,
     #about-me h1 span {
         font-size: 2.8rem;
+    }
+
+    #about-me p {
+        text-align: left;
     }
 
     .project-container-about {
