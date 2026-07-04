@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -69,7 +69,7 @@ body {
     display: grid;
     grid-template-columns: 65px 1fr;
     grid-gap: 10px;
-    position: auto;
+    position: sticky;
     top: 10%;
 }
 
@@ -477,13 +477,30 @@ header ul li a.active {
     opacity: 0.6;
 }
 
-.edu-work-box p {
-    color: var(--text-color);
-    margin-top: 10px;
+.edu-work-box p,
+.edu-work-box ul li {
     font-size: 0.8rem;
     line-height: 1.6;
-    text-align: justify;
     opacity: 0.9;
+}
+
+.edu-work-box p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.edu-work-box ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.edu-work-box ul li {
+    margin-bottom: 6px;
+}
+
+.edu-work-box ul li:last-child {
+    margin-bottom: 0;
 }
 
 /* Projects */
@@ -507,7 +524,6 @@ header ul li a.active {
 }
 
 .project-full-box .project-title {
-    color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 5px;
@@ -617,7 +633,7 @@ header ul li a.active {
         grid-template-columns: 1fr;
     }
 
-    .main-profile {
+    .menu-profile {
         position: static;
     }
 
@@ -660,12 +676,7 @@ header ul li a.active {
 }
 
 @media(max-width:790px) {
-    .project-container-about {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .skill-box-container,
-    .project-container,
     .edu-work-container,
     .contact-box-container {
         grid-template-columns: 1fr;
@@ -679,10 +690,6 @@ header ul li a.active {
 @media(max-width:520px) {
     .main-container {
         margin: 20px auto;
-    }
-
-    .project-container-about {
-        grid-template-columns: 1fr;
     }
 
     .user-profile-img {
@@ -713,19 +720,6 @@ header ul li a.active {
 
     #about-me p {
         text-align: left;
-    }
-
-    .project-container-about {
-        grid-gap: 15px;
-    }
-
-    .project-container-box {
-        display: grid;
-        grid-template-columns: 100px 1fr;
-    }
-
-    .project-container-box span {
-        font-size: 2.8rem;
     }
 
     .section-heading h3 {
